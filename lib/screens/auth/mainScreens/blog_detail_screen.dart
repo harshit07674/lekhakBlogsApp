@@ -213,7 +213,7 @@ class _BlogDetailScreenState extends State<BlogDetailScreen> {
                                             .contains(userId)) {
                                             }
                                             */
-
+                                     
                                     if(snapshot.data!['likes'].contains(userId)){
                                       FirebaseFirestore.instance.collection('blogs').doc('${widget.authorName}${widget.createdDate}${widget.blogTitle}').update({
                                         'likes':FieldValue.arrayRemove([userId]),

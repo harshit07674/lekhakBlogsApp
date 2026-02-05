@@ -16,7 +16,9 @@ class _BottomNavBarExampleState extends State<BottomNavBarExample> {
   final List<Widget> _children = [
     HomeScreen(),
     UploadScreen(isEditable: false,),
-    ProfileScreen(isMyProfile: true,userId: FirebaseAuth.instance.currentUser!.uid,),
+    ProfileScreen(isMyProfile: true,userId: '123'
+    // FirebaseAuth.instance.currentUser!.uid,
+    ),
     WalletScreen(),
   ];
 
